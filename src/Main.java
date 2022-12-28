@@ -6,7 +6,8 @@ public class Main {
         task3();
         task4();
         task5();
-        task6();
+        task6_1();
+        task6_2();
         task7();
     }
 
@@ -93,7 +94,7 @@ public class Main {
             System.out.println("Если ребенок старше " + age + " лет, то он может кататься без сопровождения взрослого");
         }
     }
-    public static void task6() {System.out.println("Задача 6");
+    public static void task6_1() {System.out.println("Задача 6.1");
         int place = 103;
         boolean zeroPleace = place <=0;
         boolean allPlace = place > 102;
@@ -108,10 +109,23 @@ public class Main {
         else if (strandingPlace) {
             System.out.println("Вы выбрали стоячее место под номером " + place + " из 102 доступных мест (Из них 60 сидячих которые уже заняты другими пользователями)");}
     }
-    public static void task7() {System.out.println("Задача 7");
-        int one = 1;
+    public static void task6_2() {System.out.println("Задача 6.2");
+        int place = 103;
+        int sittingPlace = 60;
+        int stradingPlace = 102;
+        if (place <= sittingPlace) {
+            System.out.println("Выбрано сидячее место ");}
+        else if (place > sittingPlace && place <= stradingPlace) {
+            System.out.println("Выбрано стоячее место");} else if (place>stradingPlace) {
+            System.out.println("Мест нет");}
+    }
+    public static void  task7() {System.out.println("Задача 7");
+        int one = 4;
         int two = 2;
         int three = 3;
-
+        if (one> two && one > three) {
+            System.out.println("Первое число больше второго и третьего");} else if (two > one && two > three) {
+            System.out.println("Второе число больше первого и третьего");} else if (three > one && three > two) {
+            System.out.println("Третье число больше первого и второго");}
     }
 }
